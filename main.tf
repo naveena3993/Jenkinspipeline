@@ -35,7 +35,3 @@ provider "azuread" {
     alias           =   "ad"
 }
 
-
- module "storageAccount" {
-   source  =   "./azure/storageAccount"
-}
