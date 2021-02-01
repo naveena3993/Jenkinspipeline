@@ -9,6 +9,11 @@ pipeline{
         PATH = "$TF_HOME:$PATH"
     }
     stages {
+          stage('Git checkout'){
+            steps{
+               git credentialsId: '836f1cd0-78c0-4c51-a21c-d365f759f7b6', url: 'https://github.com/naveena3993/Jenkinspipeline.git'
+           }
+        }
     
         stage('Terraform Init'){
             
